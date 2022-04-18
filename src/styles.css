@@ -2,8 +2,9 @@
   max-width: 700px;
   margin: 50px auto;
   padding: 30px;
-  border: 1px solid gray;
+  border: 2px solid #d7e3ee;
   border-radius: 7px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
 }
 
 .search {
@@ -25,9 +26,22 @@
   margin: 0;
 }
 
-.big-temp {
+.current-temp {
   text-align: center;
-  font-size: 70px;
+}
+
+.current-temp .big-temp {
+  font-size: 100px;
+}
+
+.current-temp .unit {
+  font-size: 20px;
+  position: relative;
+  top: -54px;
+}
+
+.weather-info {
+  opacity: 0.7;
 }
 
 .future-conditions {
