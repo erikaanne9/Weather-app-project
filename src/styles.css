@@ -1,10 +1,11 @@
 .weather-app {
   max-width: 700px;
-  margin: 50px auto;
-  padding: 30px;
-  border: 2px solid #d7e3ee;
+  margin: 60px auto;
+  padding: 40px;
+  border: 2px solid #fff;
   border-radius: 7px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  background-color: #fff;
 }
 
 .search {
@@ -13,11 +14,26 @@
   text-align: right;
 }
 
+.search-input {
+  background-color: rgb(245, 228, 228, 0.3) !important;
+  border: none !important;
+  padding: 15px 20px !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color: #df493b !important;
+  border-color: #df493b !important;
+  padding: 15px 20px !important;
+  border-radius: 6px !important;
+}
+
 .weather-heading {
   margin-top: 20px;
   padding: 20px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -31,7 +47,8 @@
 }
 
 .current-temp .big-temp {
-  font-size: 100px;
+  font-size: 6rem;
+  font-weight: 500;
 }
 
 .current-temp .unit {

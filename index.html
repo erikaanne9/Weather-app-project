@@ -19,8 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Slab:wght@200&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body>
+  <body style="background-color: #eededd;">
     <div class="container">
       <div class="weather-app">
 
@@ -31,7 +33,7 @@
               <input type="search" placeholder="Search Locations" class="form-control search-input">
             </div>
             <div class="col-3 p-0">
-              <input type="submit" class="btn btn-primary w-100" value="Search">
+              <input type="submit" class="btn btn-primary w-100" value="Search" id="search-btn">
             </div>
           </div>
         </form>
@@ -40,12 +42,12 @@
         <p class="date-time"></p>
 
         <div class="current-temp">
-          <span class="big-temp">60</span>
+          <span class="big-temp" id="big-temp">--</span>
           <span class="unit">°F | <a href="#">°C</a></span>
         </div>
 
         <div class="weather-info">
-          <div class="description"></div>
+          <div class="description" id="description"></div>
           <div class="humidity">Humidity: %</div>
          <div class="wind">Wind: km/h</div>
         </div>
@@ -58,6 +60,7 @@
       This project was coded by Erika Jones and is open-sourced on
       <a href="https://github.com/erikaanne9" target="_blank">GitHub</a>
     </p>
+    
     <script src="src/index.js"></script>
   </body>
 </html>
