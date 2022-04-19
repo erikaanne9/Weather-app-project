@@ -44,6 +44,6 @@ function displayTemperature(response) {
 }
 
 let apiKey = "b1b855fb121f5178057b1006a42c2d0b";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apiKey}&units=imperial`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Huntsville&appid=${apiKey}&units=imperial`;
 
 axios.get(apiUrl).then(displayTemperature);
