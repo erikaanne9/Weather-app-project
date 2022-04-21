@@ -42,6 +42,11 @@
   margin: 0;
 }
 
+.current-temp img {
+  position: relative;
+  top: -30px;
+}
+
 .current-temp {
   text-align: center;
 }
