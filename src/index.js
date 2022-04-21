@@ -51,7 +51,18 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "b1b855fb121f5178057b1006a42c2d0b";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Huntsville&appid=${apiKey}&units=imperial`;
+function search(city) {
+  let apiKey = "b1b855fb121f5178057b1006a42c2d0b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#search-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector(".search");
+form.addEventListener("submit", handleSubmit);
