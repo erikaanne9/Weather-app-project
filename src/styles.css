@@ -61,6 +61,15 @@
   top: -54px;
 }
 
+.current-temp .active {
+  color: black;
+  text-decoration: none;
+}
+
+.current-temp .active:hover {
+  cursor: default;
+}
+
 .weather-info {
   opacity: 0.7;
 }
