@@ -84,6 +84,16 @@
   font-family: "Quicksand", sans-serif;
 }
 
+.weather-forecast {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.weather-forecast-day,
+.weather-forecast-min {
+  opacity: 0.6;
+}
+
 .coder-stamp {
   max-width: 700px;
   margin: 50px auto;
